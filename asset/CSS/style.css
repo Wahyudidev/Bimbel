@@ -1,6 +1,7 @@
 body {
   
   overflow-x: hidden;
+ 
   
 }
 @font-face {
@@ -54,94 +55,79 @@ body {
       margin-left: 1rem;
     }
   }
-  /*slider*/
-  .slider {
-    position: relative;
-    margin-bottom: 3rem;
-    
-  }
-  
-  .slider-container {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  .slide {
-    width: 100%;
-    flex-shrink: 0;
-  }
-  
-  .slide img {
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  
-  
-  /*slide content*/
-  .slide {
-    position: relative;
-  }
-  .slide-content {
-    font-family: 'GothamMedium';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .slide:hover .slide-content {
-    opacity: 1;
-  }
-  .slide h2 {
-    font-family: 'GothamMedium';
-    font-size: 2em;
-    margin: 0 0 10px;
-  }
-  .slide p {
-    font-family: 'GothamMedium';
-    margin: 0 0 20px;
-  }
-  .slide button {
-    background-color: rgb(255,130,60);
-    color: #ffff;
-    font-size: 1.2em;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  .slider-dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  /*whatsapp*/
+  #whatsapp-icon {
+    position: fixed;
     bottom: 20px;
-    left: 0;
-    right: 0;
-    height: 20px; /* adjust as needed */
+    right: 20px;
+    z-index: 9999;
   }
   
-  .slider-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #aaa;
-    margin: 0 5px;
-    cursor: pointer;
-  }
   
-  .slider-dot.active {
-    background-color: #333;
-  }
+ /*slider*/
+ .slider {
+  position: relative;
   
-  /*slide content end */
-  /*content slide kedua*/
+  
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/*slide content*/
+.slide {
+  position: relative;
+  
+}
+.slide-content {
+  font-family: 'GothamMedium';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slide:hover .slide-content {
+  opacity: 1;
+}
+.slide h2 {
+  font-family: 'GothamMedium';
+  font-size: 2em;
+  margin: 0 0 10px;
+}
+.slide p {
+  font-family: 'GothamMedium';
+  margin: 0 0 20px;
+}
+.slide button {
+  background-color: rgb(255,130,60);
+  color: #ffff;
+  font-size: 1.2em;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+/*content slide kedua*/
 
 .overlay {
   position: absolute;
@@ -150,6 +136,7 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+ 
 }
 
 .img2 {
@@ -157,12 +144,14 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
+  padding-bottom: 20px;
 }
 
 .dsc2 {
   font-size: 1.5rem;
   margin: 0 0 2rem 0;
   text-align: left;
+  
 }
 @media (max-width: 767px) {
   /* Konfigurasi CSS untuk tampilan mobile */
@@ -182,24 +171,37 @@ body {
     padding: 8px 16px;
   }
 }
-/*content slide kedua end */
-
 
 /*content and card*/
 
 .title{
     text-align: center;
-    color: blue;
+    color:#FF77A9;
     font-weight: bold;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    font-family: 'GothamMedium';
+    margin-top: 20px;
+    margin-bottom: 30px;
 
 }
 .why-privat{
-  padding: 2rem 0;
+  margin: 0;
+  padding: 0.5rem 0;
+  background: url(../img/background_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: -50px;
   
 }
+.card-why-privat h3 {
+  text-align: left;
+  font-family: 'GothamMedium';
+}
+
+.card-why-privat p {
+  text-align: left;
+  font-family: 'GothamMedium';
+}
+
 div.page-center{
   position: relative;
 }
@@ -218,13 +220,31 @@ div.page-center{
   width: 384px;
 }
 .why-privat, btn-pesan{
-  margin-top: 2rem;
   text-align: center;
+  font-family: 'GothamMedium';
  
   
 }
 .btn-pesan{
-  margin: 0.5rem;
+  
+  color: #ffff;
+  border-radius: 20rem;
+  margin-top: 20px;
+  
+}
+@media (max-width: 600px) {
+  .card-why-privat {
+    width: 100%;
+  }
+}
+
+.why-privat, btn-pesan{
+  
+  text-align: center;
+}
+
+.btn-pesan{
+  
   color: #ffff;
   border-radius: 20rem;
   
@@ -233,11 +253,13 @@ div.page-center{
 
 /*HERO*/
 .hero-section {
-  background-color: #00A0FE;
+  background-image: url(../img/bg-mapel.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 40px 0px;
-  color: #ffff;
+  color: #33272a;
   padding: 5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -270,6 +292,13 @@ div.page-center{
   text-align: center;
   color: #fff;
 }
+.card-mapel:hover img {
+  opacity: 0.8;
+  }
+  
+  .card-mapel:hover .centered {
+  opacity: 1;
+  }
 
 @media only screen and (max-width: 768px) {
   .card-mapel .centered {
@@ -291,7 +320,8 @@ div.page-center{
 }
 
 .container-bg-invite {
-  background-color: blue;
+  background-image: url(../img/bg-invite.png);
+  background-size: cover;
   padding: 1rem;
   margin: 4rem 4rem;
   border-radius: 2rem;
@@ -309,19 +339,20 @@ div.page-center{
 }
 
 .asset-invite img {
-  width: 300px;
-  height: auto;
+  width: 350px;
+  height: auto 20px;
   margin-left: 8rem;
+
 }
 
 .asset-invite h3 {
   margin-bottom: 0.5rem;
   margin-right: 9rem;
-  color: #fff;
+  color: #33272a;
 }
 
 .btn-invite {
-  background-color:  rgb(255,130,60);
+  background-color:  #FF77A9;
   text-align: center;
   font-weight: 600;
   padding: 0.5rem 1rem;
@@ -345,6 +376,7 @@ div.page-center{
   .asset-invite img {
     margin: 1rem 0;
     width: 100%;
+    
   }
   
   .asset-invite h3 {
@@ -374,12 +406,120 @@ div.page-center{
   }
 }
 
+                                                  /*Subject-study*/
+/* CSS untuk judul halaman */
+.subject-container{
+  background-image: url(../img/bg-lihat-mapel.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  
+}
+.subject{
+  float: none;
+  margin: auto;
+}
+.content-subject{
+  background: #ffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgb(0 0 0 /5%);
+  position: relative;
+  z-index: 2;
+  margin: auto;
+  width: 80%;
+  top: 7rem;
+  
+}
+.title-subject {
+  top: 30px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.subject-accordion{
+  padding: 1rem;
+}
+/* CSS untuk setiap kontainer mata pelajaran */
+.sbj-cont {
+  margin-bottom: 20px;
+}
+
+/* CSS untuk teks nama mata pelajaran */
+.acordion-sbj-txt {
+  display: flex;
+  align-items: center;
+}
+
+.font-sbj {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+.font-sbj:hover{
+  color: #FF77A9;
+}
+
+/* CSS untuk nomor jumlah materi */
+.sbj-number {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50rem;
+}
+
+.fnt-number {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* CSS untuk gambar */
+.acordion-sbj-img {
+  margin-left: 10px;
+}
+
+.acordion-sbj-img img {
+  max-width: 30px;
+}
+
+/* CSS untuk daftar dropdown */
+.drp-dwn {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out, margin-top 0.2s ease-out;
+}
+
+.sbj-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.fnt-subject {
+  font-size: 14px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* CSS untuk daftar dropdown yang terbuka */
+.show {
+  max-height: 1000px;
+  transition: max-height 0.2s ease-in, margin-top 0.2s ease-in;
+  margin-top: 20px;
+}
+
+
 /*footer*/
 body{margin-top:20px;}
 .footer_area {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    color:#ffff;
 -webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
     box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
     padding:60px;
@@ -495,6 +635,7 @@ body{margin-top:20px;}
 .footer_social_area {
     position: relative;
     z-index: 1;
+    margin-top: 2rem;
 }
 .footer_social_area a {
     border-radius: 50%;
