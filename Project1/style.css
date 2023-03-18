@@ -3,7 +3,7 @@ body {
     padding: 40px 0;
     background-color: #F0F8FF;
 }
-h2 {
+.judul{
 	color: #333;
 	text-align: center;
 	text-transform: uppercase;
@@ -12,7 +12,7 @@ h2 {
 	position: relative;
 	margin: 30px 0 60px;
 }
-h2::after {
+.judul::after {
 	content: "";
 	width: 140px;
 	position: absolute;

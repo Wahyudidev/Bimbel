@@ -8,3 +8,12 @@ $(document).ready(function() {
 
 //matapelajaran
 // ambil semua elemen daftar mata pelajaran
+$(document).ready(function(){
+  $('.sbj-cont').click(function(){
+    $(this).find('.sbj-list').slideToggle();
+  });
+});
+
+//review
+
+
